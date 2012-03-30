@@ -15,6 +15,8 @@ if (regex.test(location.href)) {
   // No match was found.
 }
 
+// TODO:
+// - use data URI for BG image
 chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 	document.getElementsByTagName('IMG')[0].style.background = request.active ? 'url(http://boomshed.com/TransImgBG/bg_checkerboard.png)' : '';
 });
