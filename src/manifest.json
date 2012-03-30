@@ -1,0 +1,26 @@
+{
+	"name": "TransImgBG",
+	"version": "1.0",
+	"description": "Displays a 'checkerboard' pattern behind transparent images when they're viewed directly",
+
+	"background_page": "background.html",
+
+	"content_scripts" : [
+		{
+			"matches" : [
+			"http://*/*",
+			"https://*/*"
+			],
+			"js" : ["contentscript.js"],
+			"run_at" : "document_idle",
+			"all_frames" : false
+		}
+	],
+
+	"page_action": {
+		"default_icon": "icon_inactive.png",
+		"default_title": "Show transparency"
+	}
+
+}
+
