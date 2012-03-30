@@ -16,6 +16,6 @@ if (regex.test(location.href)) {
 }
 
 chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
-	document.getElementsByTagName('IMG')[0].style.background = request.active ? 'url(http://lindsay.dev:8080/TransImgBG/bg_checkerboard.png)' : '';
+	document.getElementsByTagName('IMG')[0].style.background = request.active ? 'url(http://boomshed.com/TransImgBG/bg_checkerboard.png)' : '';
 });
 
