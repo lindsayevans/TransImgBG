@@ -1,6 +1,6 @@
 {
-	"name": "TransImgBG",
-	"version": "1.0",
+	"name": "Show image transparency",
+	"version": "0.0.3",
 	"description": "Displays a 'checkerboard' pattern behind transparent images when they're viewed directly",
 
 	"background_page": "background.html",
