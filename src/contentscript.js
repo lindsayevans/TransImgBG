@@ -1,6 +1,8 @@
 
 // TODO:
 // - check if the image has transparency? (get image pixel data, look through til trans/semi-trans found)
+// - moar options (background colour)
+// - context menu item?
 
 
 // This is currently the best check for whether we're viewing an image by itself
