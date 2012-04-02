@@ -4,12 +4,13 @@
 	"description": "Displays a 'checkerboard' pattern behind transparent images when they're viewed directly",
 
 	"background_page": "background.html",
+	"options_page": "options.html",
 
 	"content_scripts" : [
 		{
 			"matches" : [
-			"http://*/*",
-			"https://*/*"
+				"http://*/*",
+				"https://*/*"
 			],
 			"js" : ["contentscript.js"],
 			"run_at" : "document_idle",

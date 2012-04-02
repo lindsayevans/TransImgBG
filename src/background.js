@@ -12,6 +12,14 @@ function onRequest(request, sender, sendResponse) {
 		});
   });
 
+	if(localStorage["show-transparency-default"]){
+		active = localStorage["show-transparency-default"] === 'true';
+		chrome.pageAction.setIcon({tabId: sender.tab.id, path: active ? 'icon.png' : 'icon_inactive.png'});
+		chrome.pageAction.setTitle({tabId: sender.tab.id, title: active ? 'Hide transparency' : 'Show transparency'});
+		chrome.tabs.sendRequest(sender.tab.id, {active: active}, function(response) {
+		});
+	}
+
   // Return nothing to let the connection be cleaned up.
   sendResponse({});
 };
