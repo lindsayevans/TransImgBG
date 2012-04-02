@@ -16,7 +16,7 @@ function onRequest(request, sender, sendResponse) {
 		chrome.pageAction.setIcon({tabId: tab.id, path: active ? 'icon.png' : 'icon_inactive.png'});
 		chrome.pageAction.setTitle({tabId: tab.id, title: active ? 'Hide transparency' : 'Show transparency'});
 		chrome.tabs.sendRequest(tab.id, {active: active}, function(response) {
-	});
+		});
   });
 
 
