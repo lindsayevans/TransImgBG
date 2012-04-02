@@ -21,7 +21,12 @@
 	"page_action": {
 		"default_icon": "icon_inactive.png",
 		"default_title": "Show transparency"
-	}
+	},
+
+	"permissions": [
+		"contextMenus"
+	]
+
 
 }
 
