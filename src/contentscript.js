@@ -4,7 +4,7 @@
 
 
 // This is currently the best check for whether we're viewing an image by itself
-var standalone_images = document.querySelectorAll('img[style*="-webkit-user-select: none; cursor: -webkit-zoom"]');
+var standalone_images = document.querySelectorAll('body > img[style*="-webkit-user-select: none; cursor: -webkit-zoom"]');
 if(standalone_images.length === 1){
 	// Send message to background page - displays the page action icon 
   chrome.extension.sendRequest({}, function (response) {});
