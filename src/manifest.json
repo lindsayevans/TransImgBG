@@ -1,6 +1,6 @@
 {
 	"name": "Show image transparency",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Displays a 'checkerboard' pattern behind transparent images when they're viewed directly",
 	"icons": {
 		"16": "icon.png",
