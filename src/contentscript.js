@@ -1,14 +1,15 @@
 
 // TODO:
 // - check if the image has transparency? (get image pixel data, look through til trans/semi-trans found)
-// - moar options (background colour)
 
+chrome.extension.sendRequest({message: 'remove-menu-item'}, function (response) {});
 
 // This is currently the best check for whether we're viewing an image by itself
 var standalone_images = document.querySelectorAll('body > img[style*="-webkit-user-select: none"]');
 if(standalone_images.length === 1){
+	chrome.extension.sendRequest({message: 'create-menu-item'}, function (response) {});
 	// Send message to background page - displays the page action icon 
-  chrome.extension.sendRequest({}, function (response) {});
+	chrome.extension.sendRequest({}, function (response) {});
 }
 
 // Listen for request from the background page - toggle 'active' state of page action icon
